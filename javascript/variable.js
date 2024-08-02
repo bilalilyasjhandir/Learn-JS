@@ -2,6 +2,7 @@ const userId = 1234
 let userEmail = "bilal@email.com"
 var userPassword = "123"
 userCity = "Bahawalpur"
+let userState;
 
 /*
 do not use var, use let
@@ -15,4 +16,4 @@ userCity = "Lahore"
 
 console.log(userId);
 
-console.table([userId, userEmail, userPassword, userCity])
+console.table([userId, userEmail, userPassword, userCity, userState])
