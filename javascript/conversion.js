@@ -1,4 +1,4 @@
-//Number Operation for a number
+//Number operation for a number
 let num = "20"
 console.log(typeof num)
 
