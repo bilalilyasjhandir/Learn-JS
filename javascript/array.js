@@ -32,3 +32,33 @@ console.log(array1); //the array is same
 
 console.log(array1.splice(1, 3)); //gets values by manipulating original array
 console.log(array1); //the array is changed
+
+const arrayStudents = ["Bilal", "Ali", "Ahmad"]
+const arrayTeachers = ["Faiz", "Dawood", "Hassan"]
+
+arrayStudents.push(arrayTeachers) //sets array as an element of other
+console.log(arrayStudents);
+console.log(arrayStudents[3]); 
+console.log(arrayStudents[3][2]); //access elements inside array element
+
+//two methods for joining arrays properly
+joinedArray1 = arrayStudents.concat(arrayTeachers)
+console.log(joinedArray1);
+
+joinedArray2 = [...arrayStudents, ...arrayTeachers]
+console.log(joinedArray2);
+
+
+const complexArray = [1, 2, 3, [4, 5], 6, 7, [8, 9, [10, 11], 12]]
+const simpleArray = complexArray.flat(Infinity) //simplifies arrays
+console.log(simpleArray);
+
+console.log(Array.isArray("Bilal")); //checks array
+console.log(Array("Bilal Jhandir")); //creates array with one element
+console.log(Array.from("Bilal Jhandir")); //creates array with each element seperately
+console.log(Array.from({name: "Bilal"})); //can not
+
+let age1 = 20
+let age2 = 25
+let age3 = 30
+console.log(Array.of(age1, age2, age3)); //creates array of variables
