@@ -92,3 +92,29 @@ console.log(Object.entries(user1));
 
 console.log(user1.hasOwnProperty('id'));
 console.log(user1.hasOwnProperty('mobile'));
+
+//destructure an object
+const classroom = {
+    subject: "English",
+    teacher: "Ahmad",
+    fees: "999"
+}
+
+const {teacher} = classroom
+console.log(teacher);
+
+const {teacher: instructor} = classroom   //renaming
+console.log(instructor);
+
+/*
+JSON format:
+{
+
+}
+
+It can also be in array format:
+[
+{},
+{},
+]
+*/
