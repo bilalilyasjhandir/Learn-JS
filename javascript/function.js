@@ -46,3 +46,37 @@ function loginMessage2(username = "No one"){
 }
 
 console.log(loginMessage2());
+
+
+
+function addItems(...number1){
+    return number1
+}
+
+console.log(addItems(200, 300, 400));
+
+
+const user = {
+    name: "Bilal",
+    id: 123,
+    age: 20
+}
+
+function tellAge(anyone){
+    console.log(`Hi ${anyone.name}! Your age is ${anyone.age}`);
+}
+
+tellAge(user)
+tellAge({
+    name: "Ali",
+    age: "25"
+})
+
+function returnThirdValue(array){
+    return array[2]
+}
+
+const numArray = [100, 200, 300, 400]
+
+console.log(returnThirdValue(numArray));
+console.log(returnThirdValue([100, 200, 300, 400]));
