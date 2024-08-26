@@ -30,4 +30,4 @@ const userFour = new User("Shahid", 40, false)
 console.log(userThree);
 
 
-console.log(userThree.constructor);
+console.log(userOne.constructor);
